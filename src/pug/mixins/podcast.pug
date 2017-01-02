@@ -1,0 +1,6 @@
+mixin podcast(duration, classes, url, image, name)
+  .podcast(class=classes)
+    a(href=url)
+      img(src=image)
+      h3= name
+      h5.duration= duration

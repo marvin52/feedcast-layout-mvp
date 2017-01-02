@@ -1,0 +1,32 @@
+nav.navbar.navbar-default#navbar-feedcast
+  .container-fluid
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header
+      a.navbar-brand(href='index.html')#brand-feedcast
+        i.fa.fa-podcast
+        b  Feed
+        |cast
+    // Collect the nav links, forms, and other content for toggling
+    #feedcast-navbar.collapse.navbar-collapse
+      form.navbar-form.navbar-left
+        .form-group
+          input.form-control(type='text', placeholder='Search podcasts, episodes or tags')
+          button.btn.btn-default(type='submit')
+            i.fa.fa-search
+      ul.nav.navbar-nav.navbar-right
+        //- li
+        //-   a(href='#') Link
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+            | Conta
+            span.caret
+          ul.dropdown-menu
+            li
+              a(href='#') Action
+            li
+              a(href='#') Another action
+            li
+              a(href='#') Something else here
+            li.divider(role='separator')
+            li
+              a(href='#') Separated link
