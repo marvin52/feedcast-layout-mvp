@@ -1,5 +1,11 @@
+$color-bg-navbar: #fff
+$color-font-navbar: #FD7400
+$color-hover-navbar: #fefefe
+$color-font-search: #333
+$color-icon-search: #ccc
+
 html, body
-  background-color: #00261C
+  background-color: #f1f1f1
 
 input, textarea, button, nav
   border-radius: 0px !important
@@ -15,12 +21,14 @@ input, textarea, button, nav
     top: 20px
     left: 10px
     display: inline-block
+    .st0
+      fill: $color-font-navbar
 
 #navbar-feedcast
-  background-color: #00261C
+  background-color: $color-bg-navbar
   border: 0px
   height: 60px
-  border-bottom: 3px solid #167F39
+  border-bottom: 1px solid $color-font-navbar
   box-sizing: content-box
 
   .navbar-form
@@ -33,22 +41,25 @@ input, textarea, button, nav
       margin-left: -4px
       border: 0px
       &:hover
-        background-color: #001d15
+        background-color: $color-hover-navbar
 
   .navbar-header > a,
   ul.nav > li > a
-    color: #fff
+    color: $color-font-navbar
     text-decoration: none
     height: 60px
     line-height: 30px
 
     &:hover
-      background-color: #001d15
+      background-color: $color-hover-navbar
 
 .navbar-inverse .navbar-nav>.open>a,
 .navbar-inverse .navbar-nav>.open>a:focus,
-.navbar-inverse .navbar-nav>.open>a:hover
-  background-color: #001d15
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover
+  background-color: $color-hover-navbar
 
 .channel
   margin-bottom: 10px
@@ -67,7 +78,7 @@ input, textarea, button, nav
       font-weight: bold
       margin: 0px
       padding: 10px 0px
-      color: #96ED89
+      color: #2980B9
       width: 100%
       white-space: nowrap
       overflow: hidden
@@ -113,7 +124,7 @@ $lines-to-show: 2;
       font-weight: bold
       // position: absolute
       // bottom: 0px
-      color: #96ED89
+      color: #2980B9
       width: 100%
       height: 50px
       // white-space: nowrap
@@ -140,12 +151,11 @@ $lines-to-show: 2;
 
 .title-gallery
   font-weight: bold
-  color: #fff
 
 .search-form
   position: relative
   &:after
-    color: white
+    color: $color-icon-search
     content: "\f002"
     display: inline-block
     font: normal normal normal 14px/1 FontAwesome
@@ -159,17 +169,15 @@ $lines-to-show: 2;
   input#search-input.form-control
     background: none !important
     background-color: none !important
-    color: white
+    color: $color-font-search
     border: 0px
-    border-bottom: 1px solid rgba(255,255,255,.1)
+    border-bottom: 1px solid rgba(0,0,0,.1)
     transition: all 1s ease
     padding-right: 30px
     &:focus
-      border-bottom-color: rgba(255,255,255,.7)
+      border-bottom-color: $color-font-navbar
       outline: none
       -webkit-box-shadow: none
       box-shadow: none
 .panel
   padding: 25px 15px
-  background: #044C29
-  color: #96ED89
