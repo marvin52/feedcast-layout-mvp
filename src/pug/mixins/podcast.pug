@@ -1,6 +1,6 @@
 mixin podcast(duration, classes, url, image, name)
   .podcast(class=classes)
     a(href=url)
-      img(src=image)
+      .podcast-img(style='background-image: url(' + image + ')')
       h3= name
       h5.duration= duration

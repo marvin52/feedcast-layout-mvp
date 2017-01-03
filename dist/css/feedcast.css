@@ -1,5 +1,5 @@
 html, body {
-  background-color: #EFEFEF; }
+  background-color: #00261C; }
 
 input, textarea, button, nav {
   border-radius: 0px !important; }
@@ -17,10 +17,10 @@ input, textarea, button, nav {
     display: inline-block; }
 
 #navbar-feedcast {
-  background-color: #2B3A42;
+  background-color: #00261C;
   border: 0px;
   height: 60px;
-  border-bottom: 3px solid #45BF55;
+  border-bottom: 3px solid #167F39;
   box-sizing: content-box; }
   #navbar-feedcast .navbar-form {
     margin: 13px auto; }
@@ -32,7 +32,7 @@ input, textarea, button, nav {
       margin-left: -4px;
       border: 0px; }
       #navbar-feedcast .navbar-form button:hover {
-        background-color: #263035; }
+        background-color: #001d15; }
   #navbar-feedcast .navbar-header > a,
   #navbar-feedcast ul.nav > li > a {
     color: #fff;
@@ -41,12 +41,12 @@ input, textarea, button, nav {
     line-height: 30px; }
     #navbar-feedcast .navbar-header > a:hover,
     #navbar-feedcast ul.nav > li > a:hover {
-      background-color: #263035; }
+      background-color: #001d15; }
 
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:focus,
 .navbar-inverse .navbar-nav > .open > a:hover {
-  background-color: #263035; }
+  background-color: #001d15; }
 
 .channel {
   margin-bottom: 10px; }
@@ -55,7 +55,6 @@ input, textarea, button, nav {
     box-sizing: content-box;
     display: block; }
     .channel a .channel-img {
-      border-radius: 5px;
       width: 100%;
       height: 140px;
       background-size: cover;
@@ -66,9 +65,8 @@ input, textarea, button, nav {
       font-weight: bold;
       margin: 0px;
       padding: 10px 0px;
-      color: #167ac6;
+      color: #96ED89;
       width: 100%;
-      background: #fff;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -80,17 +78,35 @@ input, textarea, button, nav {
     position: relative;
     box-sizing: content-box;
     display: block; }
-    .podcast a img {
+    .podcast a .podcast-img {
       width: 100%;
-      height: 140px; }
+      height: 140px;
+      background-size: cover;
+      background-position: center; }
+      .podcast a .podcast-img:after {
+        color: rgba(255, 255, 255, 0);
+        content: "\f04b";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -25px;
+        margin-top: -50px;
+        font-size: 50px;
+        transition: all .4s ease; }
+      .podcast a .podcast-img:hover:after {
+        color: #fff; }
     .podcast a:hover h3 {
       text-decoration: underline; }
     .podcast a h3 {
       font-weight: bold;
-      color: #167ac6;
+      color: #96ED89;
       width: 100%;
       height: 50px;
-      background: #fff;
       display: block;
       display: -webkit-box;
       height: 36.4px;
@@ -111,7 +127,8 @@ input, textarea, button, nav {
       right: 0px; }
 
 .title-gallery {
-  font-weight: bold; }
+  font-weight: bold;
+  color: #fff; }
 
 .search-form {
   position: relative; }
@@ -140,5 +157,10 @@ input, textarea, button, nav {
       outline: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
+
+.panel {
+  padding: 25px 15px;
+  background: #044C29;
+  color: #96ED89; }
 
 /*# sourceMappingURL=feedcast.css.map */

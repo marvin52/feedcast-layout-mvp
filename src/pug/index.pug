@@ -4,21 +4,22 @@ html
   include partials/header.pug
   body
     include partials/navbar-top
-    .container.panel
-      h5.title-gallery Canais recomendados
-      .row
-        +channel('col-xs-4 col-sm-3 col-md-2','channel.html','http://vignette3.wikia.nocookie.net/jovem-nerd/images/a/ad/Nerdcast.jpg/revision/latest?cb=20130210194255&path-prefix=pt-br', 'Nerdcast')
-        +channel('col-xs-4 col-sm-3 col-md-2','channel.html','https://placehold.it/350x150', 'Fronteiras da Ciência')
-        +channel('col-xs-4 col-sm-3 col-md-2','channel.html','https://placehold.it/350x150', 'teste asd asd asd asd asd asd ')
-        +channel('col-xs-4 col-sm-3 col-md-2','channel.html','https://placehold.it/350x150', 'teste asd asd asd asd asd asd ')
-        +channel('col-xs-4 col-sm-3 col-md-2','channel.html','https://placehold.it/350x150', 'teste asd asd asd asd asd asd ')
-        +channel('col-xs-4 col-sm-3 col-md-2','channel.html','https://placehold.it/350x150', 'teste asd asd asd asd asd asd ')
+    .container
+      .col-xs-12.panel
+        h4.title-gallery Canais recomendados
+        .row
+          +channel('col-xs-4 col-sm-3 col-md-2','channel.html','https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg', 'NerdCast')
+          +channel('col-xs-4 col-sm-3 col-md-2','channel.html','https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg', 'NerdCast')
+          +channel('col-xs-4 col-sm-3 col-md-2','channel.html','https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg', 'NerdCast')
+          +channel('col-xs-4 col-sm-3 col-md-2','channel.html','https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg', 'NerdCast')
+          +channel('col-xs-4 col-sm-3 col-md-2','channel.html','https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg', 'NerdCast')
+          +channel('col-xs-4 col-sm-3 col-md-2','channel.html','https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg', 'NerdCast')
 
-      h5.title-gallery Podcasts para você ouvir
-      .row
-        +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://placehold.it/350x150', 'Nerdcast')
-        +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://placehold.it/350x150', 'Fronteiras da Ciência')
-        +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://placehold.it/350x150', 'teste asd asd asd asd asd asd ')
-        +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://placehold.it/350x150', 'teste asd asd asd asd asd asd ')
-        +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://placehold.it/350x150', 'teste asd asd asd asd asd asd ')
-        +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://placehold.it/350x150', 'teste asd asd asd asd asd asd teste asd asd asd asd asd asdteste asd asd asd asd asd asd')
+        h4.title-gallery Podcasts para você ouvir
+        .row
+          +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg', 'NerdCast 548 - Rogue One: A Fan Service Story')
+          +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg', 'NerdCast 548 - Rogue One: A Fan Service Story')
+          +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg', 'NerdCast 548 - Rogue One: A Fan Service Story')
+          +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg', 'NerdCast 548 - Rogue One: A Fan Service Story')
+          +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg', 'NerdCast 548 - Rogue One: A Fan Service Story')
+          +podcast('01:23:00','col-xs-4 col-sm-3 col-md-2','podcast.html','https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg', 'NerdCast 548 - Rogue One: A Fan Service Story')
