@@ -1,16 +1,27 @@
 html, body {
-  background-color: #ECF0F1; }
+  background-color: #EFEFEF; }
 
 input, textarea, button, nav {
   border-radius: 0px !important; }
 
 #brand-feedcast {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 40px; }
+  #brand-feedcast svg {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: inline-block; }
 
 #navbar-feedcast {
-  background-color: #fff;
+  background-color: #2B3A42;
   border: 0px;
-  height: 60px; }
+  height: 60px;
+  border-bottom: 3px solid #45BF55;
+  box-sizing: content-box; }
   #navbar-feedcast .navbar-form {
     margin: 13px auto; }
     #navbar-feedcast .navbar-form input {
@@ -21,16 +32,21 @@ input, textarea, button, nav {
       margin-left: -4px;
       border: 0px; }
       #navbar-feedcast .navbar-form button:hover {
-        background-color: #fbfbfb; }
+        background-color: #263035; }
   #navbar-feedcast .navbar-header > a,
   #navbar-feedcast ul.nav > li > a {
-    color: #666;
+    color: #fff;
     text-decoration: none;
     height: 60px;
     line-height: 30px; }
     #navbar-feedcast .navbar-header > a:hover,
     #navbar-feedcast ul.nav > li > a:hover {
-      background-color: #fbfbfb; }
+      background-color: #263035; }
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: #263035; }
 
 .channel {
   margin-bottom: 10px; }
@@ -38,15 +54,16 @@ input, textarea, button, nav {
     position: relative;
     box-sizing: content-box;
     display: block; }
-    .channel a img {
+    .channel a .channel-img {
+      border-radius: 5px;
       width: 100%;
-      height: 140px; }
+      height: 140px;
+      background-size: cover;
+      background-position: center; }
     .channel a:hover h3 {
       text-decoration: underline; }
     .channel a h3 {
       font-weight: bold;
-      position: absolute;
-      bottom: 0px;
       margin: 0px;
       padding: 10px 0px;
       color: #167ac6;
@@ -95,5 +112,33 @@ input, textarea, button, nav {
 
 .title-gallery {
   font-weight: bold; }
+
+.search-form {
+  position: relative; }
+  .search-form:after {
+    color: white;
+    content: "\f002";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    font-size: 20px; }
+  .search-form input#search-input.form-control {
+    background: none !important;
+    background-color: none !important;
+    color: white;
+    border: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 1s ease;
+    padding-right: 30px; }
+    .search-form input#search-input.form-control:focus {
+      border-bottom-color: rgba(255, 255, 255, 0.7);
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
 
 /*# sourceMappingURL=feedcast.css.map */

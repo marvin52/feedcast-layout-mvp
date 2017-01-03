@@ -1,8 +1,9 @@
+- time = Date.now()
 head
-    title Feedcast App
-    link(rel="stylesheet" href="../css/bootstrap.min.css")
-    link(rel="stylesheet" href="../css/font-awesome.min.css")
-    link(rel="stylesheet" href="../css/feedcast.css")
-    script(src="../js/jquery-3.1.1.min.js")
-    script(src="../js/bootstrap.min.js")
-    script(src="../js/app.js")
+  title Feedcast App
+  link(rel="stylesheet" href="../css/bootstrap.min.css")
+  link(rel="stylesheet" href="../css/font-awesome.min.css")
+  link(rel="stylesheet" href="../css/feedcast.css?t=" + time)
+  script(src="../js/jquery-3.1.1.min.js")
+  script(src="../js/bootstrap.min.js")
+  script(src="../js/app.js")
