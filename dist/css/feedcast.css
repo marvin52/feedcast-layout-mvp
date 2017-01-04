@@ -1,5 +1,5 @@
 html, body {
-  background-color: #f5f8fa; }
+  background-color: #eee; }
 
 input, textarea, button, nav {
   border-radius: 0px !important; }
@@ -15,7 +15,7 @@ input, textarea, button, nav {
       fill: #fff; }
 
 #navbar-feedcast {
-  background-color: #1da1f2;
+  background-color: #2C858D;
   border: 0px;
   height: 60px;
   margin: 0px;
@@ -30,7 +30,7 @@ input, textarea, button, nav {
       margin-left: -4px;
       border: 0px; }
       #navbar-feedcast .navbar-form button:hover {
-        background-color: #61bcf6; }
+        background-color: #349fa9; }
   #navbar-feedcast .navbar-header > a,
   #navbar-feedcast ul.nav > li > a {
     transition: all .2s ease-in;
@@ -40,7 +40,7 @@ input, textarea, button, nav {
     line-height: 30px; }
     #navbar-feedcast .navbar-header > a:hover,
     #navbar-feedcast ul.nav > li > a:hover {
-      background-color: #61bcf6; }
+      background-color: #349fa9; }
 
 #shortcut-navbar {
   background-color: #fff; }
@@ -53,7 +53,7 @@ input, textarea, button, nav {
     #shortcut-navbar li a {
       border-bottom: 2px solid white; }
       #shortcut-navbar li a:hover {
-        border-bottom: 2px solid #1da1f2; }
+        border-bottom: 2px solid #2C858D; }
 
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:focus,
@@ -61,7 +61,7 @@ input, textarea, button, nav {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
-  background-color: #61bcf6; }
+  background-color: #349fa9; }
 
 .channel {
   margin-bottom: 10px; }
@@ -147,7 +147,7 @@ input, textarea, button, nav {
 .search-form {
   position: relative; }
   .search-form:after {
-    color: #1da1f2;
+    color: #2C858D;
     content: "\f002";
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -168,7 +168,7 @@ input, textarea, button, nav {
       box-shadow: none; }
 
 .panel {
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 25px 15px;
   background-color: #fff;
   color: #222;
@@ -188,5 +188,28 @@ input, textarea, button, nav {
     #navbar-feedcast #feedcast-navbar #search-input {
       height: 39px;
       width: calc(100vw - 110px); } }
+
+.channel-top {
+  margin-bottom: 20px; }
+
+.channel-top__navbar-left {
+  float: left;
+  display: inline-block; }
+  .channel-top__navbar-left .btn-group-vertical {
+    width: 100%; }
+
+.channel-top__image {
+  height: 300px;
+  width: 300px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: black; }
+
+.channel-top__info {
+  float: right;
+  display: inline-block;
+  width: calc(100% - 350px);
+  height: 300px;
+  margin-bottom: 0px; }
 
 /*# sourceMappingURL=feedcast.css.map */

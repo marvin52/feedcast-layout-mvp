@@ -1,8 +1,16 @@
-include mixins/channel.pug
 include mixins/podcast.pug
 html
   include partials/header.pug
   body
     include partials/navbar-top
-    .container.panel
-      h5 Página do Canal
+    .container
+      .col-xs-12.channel-top
+        .channel-top__navbar-left.panel
+          .channel-top__image(style='background-image:url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)')
+          .btn-group-vertical(role="group" aria-label="...")
+            button.btn.btn-default Acessar site
+            button.btn.btn-default Adicionar aos favoritos
+        .channel-top__info.panel
+          h2 NerdCast
+          p O mundo vira piada no Jovem Nerd
+          hr
