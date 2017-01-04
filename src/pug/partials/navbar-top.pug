@@ -13,14 +13,12 @@ nav.navbar.navbar-default#navbar-feedcast
               C51.5,320,0,371.5,0,435s51.5,115,115,115h282c63.5,0,115-51.5,115-115S460.5,320,397,320z M685,0H115C51.5,0,0,51.5,0,115\
               s51.5,115,115,115h570c63.5,0,115-51.5,115-115S748.5,0,685,0z')
 
-        b  Feed
-        |cast
     // Collect the nav links, forms, and other content for toggling
-    #feedcast-navbar.collapse.navbar-collapse
+    #feedcast-navbar
       form.navbar-form.navbar-left
         .form-group.search-form
           input#search-input.form-control(type='text', placeholder='Search podcasts, episodes or tags' autocomplete="off")
-      ul.nav.navbar-nav.navbar-right
+      ul.nav.navbar-nav.navbar-right.hidden-sm.hidden-xs
         //- li
         //-   a(href='#') Link
         li.dropdown
@@ -37,3 +35,15 @@ nav.navbar.navbar-default#navbar-feedcast
             li.divider(role='separator')
             li
               a(href='#') Separated link
+
+nav.navbar.navbar-default#shortcut-navbar
+  .container
+    ul.nav.navbar-nav
+      li
+        a(href="#") Mais Ouvidos
+      li
+        a(href="#") Mais Baixados
+      li
+        a(href="#") Adicionados Recentemente
+      li
+        a(href="#") Recomendamos

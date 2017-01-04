@@ -1,28 +1,24 @@
 html, body {
-  background-color: #f1f1f1; }
+  background-color: #f5f8fa; }
 
 input, textarea, button, nav {
   border-radius: 0px !important; }
 
 #brand-feedcast {
   text-transform: uppercase;
-  position: relative;
-  padding-left: 40px; }
+  position: relative; }
   #brand-feedcast svg {
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    top: 20px;
-    left: 10px;
+    height: 30px;
+    width: 28px;
     display: inline-block; }
     #brand-feedcast svg .st0 {
-      fill: #FD7400; }
+      fill: #fff; }
 
 #navbar-feedcast {
-  background-color: #fff;
+  background-color: #1da1f2;
   border: 0px;
   height: 60px;
-  border-bottom: 1px solid #FD7400;
+  margin: 0px;
   box-sizing: content-box; }
   #navbar-feedcast .navbar-form {
     margin: 13px auto; }
@@ -34,16 +30,30 @@ input, textarea, button, nav {
       margin-left: -4px;
       border: 0px; }
       #navbar-feedcast .navbar-form button:hover {
-        background-color: #fefefe; }
+        background-color: #61bcf6; }
   #navbar-feedcast .navbar-header > a,
   #navbar-feedcast ul.nav > li > a {
-    color: #FD7400;
+    transition: all .2s ease-in;
+    color: #fff;
     text-decoration: none;
     height: 60px;
     line-height: 30px; }
     #navbar-feedcast .navbar-header > a:hover,
     #navbar-feedcast ul.nav > li > a:hover {
-      background-color: #fefefe; }
+      background-color: #61bcf6; }
+
+#shortcut-navbar {
+  background-color: #fff; }
+  #shortcut-navbar li {
+    border-left: 1px solid #e1e8ed;
+    color: #292f33;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0 auto; }
+    #shortcut-navbar li a {
+      border-bottom: 2px solid white; }
+      #shortcut-navbar li a:hover {
+        border-bottom: 2px solid #1da1f2; }
 
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:focus,
@@ -51,7 +61,7 @@ input, textarea, button, nav {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
-  background-color: #fefefe; }
+  background-color: #61bcf6; }
 
 .channel {
   margin-bottom: 10px; }
@@ -137,7 +147,7 @@ input, textarea, button, nav {
 .search-form {
   position: relative; }
   .search-form:after {
-    color: #ccc;
+    color: #1da1f2;
     content: "\f002";
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -149,20 +159,34 @@ input, textarea, button, nav {
     top: 6px;
     font-size: 20px; }
   .search-form input#search-input.form-control {
-    background: none !important;
-    background-color: none !important;
     color: #333;
     border: 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    transition: all 1s ease;
     padding-right: 30px; }
     .search-form input#search-input.form-control:focus {
-      border-bottom-color: #FD7400;
       outline: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
 
 .panel {
-  padding: 25px 15px; }
+  border-radius: 5px;
+  padding: 25px 15px;
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #e1e8ed; }
+
+@media (max-width: 768px) {
+  #shortcut-navbar ul.nav {
+    margin-bottom: 0px; }
+  #navbar-feedcast .navbar-header {
+    display: inline-block; }
+  #navbar-feedcast #feedcast-navbar {
+    display: inline-block;
+    float: right; }
+    #navbar-feedcast #feedcast-navbar form.navbar-form.navbar-left {
+      border: 0px;
+      margin: 0px; }
+    #navbar-feedcast #feedcast-navbar #search-input {
+      height: 39px;
+      width: calc(100vw - 110px); } }
 
 /*# sourceMappingURL=feedcast.css.map */

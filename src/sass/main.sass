@@ -1,11 +1,14 @@
-$color-bg-navbar: #fff
-$color-font-navbar: #FD7400
-$color-hover-navbar: #fefefe
+$color-bg-navbar: #1da1f2
+$color-font-navbar: #fff
+$color-hover-navbar: #61bcf6
 $color-font-search: #333
 $color-icon-search: #ccc
 
+$panel-bg: #fff
+$panel-color: #222
+
 html, body
-  background-color: #f1f1f1
+  background-color: #f5f8fa
 
 input, textarea, button, nav
   border-radius: 0px !important
@@ -13,13 +16,9 @@ input, textarea, button, nav
 #brand-feedcast
   text-transform: uppercase
   position: relative
-  padding-left: 40px
   svg
-    height: 20px
-    width: 20px
-    position: absolute
-    top: 20px
-    left: 10px
+    height: 30px
+    width: 28px
     display: inline-block
     .st0
       fill: $color-font-navbar
@@ -28,7 +27,8 @@ input, textarea, button, nav
   background-color: $color-bg-navbar
   border: 0px
   height: 60px
-  border-bottom: 1px solid $color-font-navbar
+  margin: 0px
+  //border-bottom: 1px solid #36637F
   box-sizing: content-box
 
   .navbar-form
@@ -45,6 +45,7 @@ input, textarea, button, nav
 
   .navbar-header > a,
   ul.nav > li > a
+    transition: all .2s ease-in
     color: $color-font-navbar
     text-decoration: none
     height: 60px
@@ -52,6 +53,22 @@ input, textarea, button, nav
 
     &:hover
       background-color: $color-hover-navbar
+
+#shortcut-navbar
+  background-color: #fff
+
+  li
+    border-left: 1px solid #e1e8ed
+    color: #292f33
+    font-size: 18px
+    font-weight: 200
+    margin: 0 auto
+
+    a
+      border-bottom: 2px solid white
+      &:hover
+        border-bottom: 2px solid $color-bg-navbar
+
 
 .navbar-inverse .navbar-nav>.open>a,
 .navbar-inverse .navbar-nav>.open>a:focus,
@@ -155,7 +172,7 @@ $lines-to-show: 2;
 .search-form
   position: relative
   &:after
-    color: $color-icon-search
+    color: $color-bg-navbar
     content: "\f002"
     display: inline-block
     font: normal normal normal 14px/1 FontAwesome
@@ -167,17 +184,36 @@ $lines-to-show: 2;
     top: 6px
     font-size: 20px
   input#search-input.form-control
-    background: none !important
-    background-color: none !important
+    // background: none !important
+    // background-color: none !important
     color: $color-font-search
     border: 0px
-    border-bottom: 1px solid rgba(0,0,0,.1)
-    transition: all 1s ease
     padding-right: 30px
     &:focus
-      border-bottom-color: $color-font-navbar
       outline: none
       -webkit-box-shadow: none
       box-shadow: none
 .panel
+  border-radius: 5px
   padding: 25px 15px
+  background-color: $panel-bg
+  color: $panel-color
+  border: 1px solid #e1e8ed
+
+
+@media ( max-width: 768px )
+  #shortcut-navbar
+    ul.nav
+      margin-bottom: 0px
+  #navbar-feedcast
+    .navbar-header
+      display: inline-block
+    #feedcast-navbar
+      display: inline-block
+      float: right
+      form.navbar-form.navbar-left
+        border: 0px
+        margin: 0px
+      #search-input
+        height: 39px
+        width: calc(100vw - 110px)
