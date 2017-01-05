@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#1da1f2"/>
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="../css/feedcast.css?t=1483568812007"/>
+    <link rel="stylesheet" href="../css/feedcast.css?t=1483583339457"/>
     <link rel="icon" type="image/png" href="../img/feedcast.png"/>
     <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -15,7 +15,7 @@
   </head>
   <body>
     <nav class="navbar navbar-default" id="navbar-feedcast">
-      <div class="container-fluid">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display-->
         <div class="navbar-header"><a class="navbar-brand" href="index.html" id="brand-feedcast">
             <svg id="Agrupar_1_1_" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 800 870" style="enable-background:new 0 0 800 870" xml:space="preserve">
@@ -25,7 +25,7 @@
                   <path class="st0" d="M115,640C51.5,640,0,691.5,0,755s51.5,115,115,115s115-51.5,115-115S178.5,640,115,640z M397,320H115              C51.5,320,0,371.5,0,435s51.5,115,115,115h282c63.5,0,115-51.5,115-115S460.5,320,397,320z M685,0H115C51.5,0,0,51.5,0,115              s51.5,115,115,115h570c63.5,0,115-51.5,115-115S748.5,0,685,0z"></path>
                 </g>
               </g>
-            </svg></a></div>
+            </svg><b>Feed</b>Cast</a></div>
         <!-- Collect the nav links, forms, and other content for toggling-->
         <div id="feedcast-navbar">
           <form class="navbar-form navbar-left">
@@ -33,79 +33,70 @@
               <input class="form-control" id="search-input" type="text" placeholder="Search podcasts, episodes or tags" autocomplete="off"/>
             </div>
           </form>
-          <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
-            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Conta<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider" role="separator"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
     <nav class="navbar navbar-default" id="shortcut-navbar">
       <div class="container">
         <ul class="nav navbar-nav">
-          <li><a href="#">Mais Ouvidos</a></li>
-          <li><a href="#">Mais Baixados</a></li>
-          <li><a href="#">Adicionados Recentemente</a></li>
-          <li><a href="#">Recomendamos</a></li>
+          <li><a class="menu-top" href="#"><i class="fa fa-headphones"></i> Mais Ouvidos</a></li>
+          <li><a class="menu-top" href="#"><i class="fa fa-download"></i> Mais Baixados</a></li>
+          <li><a class="menu-top" href="#"><i class="fa fa-history"></i> Adicionados Recentemente</a></li>
+          <li><a class="menu-top" href="#"><i class="fa fa-heart"></i> Recomendamos</a></li>
         </ul>
       </div>
     </nav>
     <div class="container">
-      <div class="col-xs-12 panel">
-        <h4 class="title-gallery">Canais recomendados</h4>
-        <div class="row">
-          <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
-              <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
-              <h3>NerdCast</h3></a></div>
-          <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
-              <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
-              <h3>NerdCast</h3></a></div>
-          <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
-              <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
-              <h3>NerdCast</h3></a></div>
-          <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
-              <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
-              <h3>NerdCast</h3></a></div>
-          <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
-              <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
-              <h3>NerdCast</h3></a></div>
-          <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
-              <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
-              <h3>NerdCast</h3></a></div>
-        </div>
-        <h4 class="title-gallery">Podcasts para você ouvir</h4>
-        <div class="row">
-          <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
-              <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
-              <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
-              <h5 class="duration">01:23:00</h5></a></div>
-          <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
-              <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
-              <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
-              <h5 class="duration">01:23:00</h5></a></div>
-          <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
-              <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
-              <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
-              <h5 class="duration">01:23:00</h5></a></div>
-          <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
-              <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
-              <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
-              <h5 class="duration">01:23:00</h5></a></div>
-          <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
-              <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
-              <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
-              <h5 class="duration">01:23:00</h5></a></div>
-          <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
-              <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
-              <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
-              <h5 class="duration">01:23:00</h5></a></div>
+      <div class="col-xs-12 panel panel-default">
+        <div class="panel-body">
+          <h4 class="title-gallery">Canais recomendados</h4>
+          <div class="row">
+            <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
+                <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
+                <h3>NerdCast</h3></a></div>
+            <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
+                <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
+                <h3>NerdCast</h3></a></div>
+            <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
+                <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
+                <h3>NerdCast</h3></a></div>
+            <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
+                <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
+                <h3>NerdCast</h3></a></div>
+            <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
+                <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
+                <h3>NerdCast</h3></a></div>
+            <div class="channel col-xs-6 col-sm-3 col-md-2"><a href="channel.html">
+                <div class="channel-img" style="background-image: url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)"></div>
+                <h3>NerdCast</h3></a></div>
+          </div>
+          <h4 class="title-gallery">Podcasts para você ouvir</h4>
+          <div class="row">
+            <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
+                <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
+                <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
+                <h5 class="duration">01:23:00</h5></a></div>
+            <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
+                <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
+                <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
+                <h5 class="duration">01:23:00</h5></a></div>
+            <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
+                <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
+                <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
+                <h5 class="duration">01:23:00</h5></a></div>
+            <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
+                <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
+                <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
+                <h5 class="duration">01:23:00</h5></a></div>
+            <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
+                <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
+                <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
+                <h5 class="duration">01:23:00</h5></a></div>
+            <div class="podcast col-xs-6 col-sm-3 col-md-2"><a href="podcast.html">
+                <div class="podcast-img" style="background-image: url(https://jovemnerd.com.br/wp-content/uploads/2016/12/NC_548_giga.jpg)"></div>
+                <h3>NerdCast 548 - Rogue One: A Fan Service Story</h3>
+                <h5 class="duration">01:23:00</h5></a></div>
+          </div>
         </div>
       </div>
     </div>

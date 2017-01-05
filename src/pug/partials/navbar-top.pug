@@ -1,5 +1,5 @@
 nav.navbar.navbar-default#navbar-feedcast
-  .container-fluid
+  .container
     // Brand and toggle get grouped for better mobile display
     .navbar-header
       a.navbar-brand(href='index.html')#brand-feedcast
@@ -12,38 +12,47 @@ nav.navbar.navbar-default#navbar-feedcast
               path.st0(d='M115,640C51.5,640,0,691.5,0,755s51.5,115,115,115s115-51.5,115-115S178.5,640,115,640z M397,320H115\
               C51.5,320,0,371.5,0,435s51.5,115,115,115h282c63.5,0,115-51.5,115-115S460.5,320,397,320z M685,0H115C51.5,0,0,51.5,0,115\
               s51.5,115,115,115h570c63.5,0,115-51.5,115-115S748.5,0,685,0z')
-
+        b Feed
+        | Cast
     // Collect the nav links, forms, and other content for toggling
     #feedcast-navbar
       form.navbar-form.navbar-left
         .form-group.search-form
           input#search-input.form-control(type='text', placeholder='Search podcasts, episodes or tags' autocomplete="off")
-      ul.nav.navbar-nav.navbar-right.hidden-sm.hidden-xs
-        //- li
-        //-   a(href='#') Link
-        li.dropdown
-          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-            | Conta
-            span.caret
-          ul.dropdown-menu
-            li
-              a(href='#') Action
-            li
-              a(href='#') Another action
-            li
-              a(href='#') Something else here
-            li.divider(role='separator')
-            li
-              a(href='#') Separated link
+      //- ul.nav.navbar-nav.navbar-right.hidden-sm.hidden-xs
+      //-   //- li
+      //-   //-   a(href='#') Link
+      //-   li.dropdown
+      //-     a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+      //-       | Conta
+      //-       span.caret
+      //-     ul.dropdown-menu
+      //-       li
+      //-         a(href='#') Action
+      //-       li
+      //-         a(href='#') Another action
+      //-       li
+      //-         a(href='#') Something else here
+      //-       li.divider(role='separator')
+      //-       li
+      //-         a(href='#') Separated link
 
 nav.navbar.navbar-default#shortcut-navbar
   .container
     ul.nav.navbar-nav
       li
-        a(href="#") Mais Ouvidos
+        a.menu-top(href="#")
+          i.fa.fa-headphones
+          |  Mais Ouvidos
       li
-        a(href="#") Mais Baixados
+        a.menu-top(href="#")
+          i.fa.fa-download
+          |  Mais Baixados
       li
-        a(href="#") Adicionados Recentemente
+        a.menu-top(href="#")
+          i.fa.fa-history
+          |  Adicionados Recentemente
       li
-        a(href="#") Recomendamos
+        a.menu-top(href="#")
+          i.fa.fa-heart
+          |  Recomendamos

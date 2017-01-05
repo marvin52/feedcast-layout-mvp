@@ -6,11 +6,27 @@ html
     .container
       .col-xs-12.channel-top
         .channel-top__navbar-left.panel
-          .channel-top__image(style='background-image:url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)')
-          .btn-group-vertical(role="group" aria-label="...")
-            button.btn.btn-default Acessar site
-            button.btn.btn-default Adicionar aos favoritos
-        .channel-top__info.panel
-          h2 NerdCast
-          p O mundo vira piada no Jovem Nerd
-          hr
+          .panel-body
+            .channel-top__image(style='background-image:url(https://jovemnerd.com.br/wp-content/themes/jovemnerd/assets/images/nc-feed.jpg)')
+              h1 Nerdcast
+            .btn-group-vertical(role="group" aria-label="...")
+              button.btn.btn-default
+                i.fa.fa-link
+                |  Acessar site
+              button.btn.btn-default
+                i.fa.fa-star
+                |  Adicionar aos favoritos
+              button.btn.btn-default
+                i.fa.fa-share
+                |  Compartilhar
+        .channel-top__info.panel.panel-default
+          .panel-heading Podcasts
+          .panel-body
+            a(href="/html/podcast.html").col-xs-12.channel-podcast
+              h4 NerdCast 548 - Rogue One: A Fan Service Story asda dasd asd asd asd asd asd asda sda sda
+              p Comentamos sobre o filme Rogue One: Uma História Star Wars, passando pelos seus easter eggs até seus fan services. Comentamos sobre o filme Rogue One: Uma História Star Wars, passando pelos seus easter eggs até seus fan services.
+              h5.channel-podcast__duration 02:43:30
+            a(href="/html/podcast.html").col-xs-12.channel-podcast
+              h4 NerdCast 548 - Rogue One: A Fan Service Story asda dasd asd asd asd asd asd asda sda sda
+              p Comentamos sobre o filme Rogue One: Uma História Star Wars, passando pelos seus easter eggs até seus fan services. Comentamos sobre o filme Rogue One: Uma História Star Wars, passando pelos seus easter eggs até seus fan services.
+              h5.channel-podcast__duration 02:43:30
