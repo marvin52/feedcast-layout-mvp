@@ -1,10 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans");
+h1, h2, h3, h4, h5 {
+  font-family: 'Droid Sans', sans-serif; }
+
+h3 {
+  padding-top: 0px;
+  margin-top: 10px; }
+
+body {
+  overflow: scroll; }
+
 html, body {
-  background-color: #eee; }
+  background-color: #ECF0F1; }
 
 input, textarea, button, nav {
   border-radius: 0px !important; }
 
 #brand-feedcast {
+  margin-left: 0px !important;
   text-transform: uppercase;
   position: relative;
   padding-left: 35px; }
@@ -19,7 +32,7 @@ input, textarea, button, nav {
       fill: #fff; }
 
 #navbar-feedcast {
-  background-color: #2C858D;
+  background-color: #2C3E50;
   border: 0px;
   height: 60px;
   margin: 0px;
@@ -34,7 +47,7 @@ input, textarea, button, nav {
       margin-left: -4px;
       border: 0px; }
       #navbar-feedcast .navbar-form button:hover {
-        background-color: #349fa9; }
+        background-color: #28435e; }
   #navbar-feedcast .navbar-header > a,
   #navbar-feedcast ul.nav > li > a {
     transition: all .2s ease-in;
@@ -44,7 +57,7 @@ input, textarea, button, nav {
     line-height: 30px; }
     #navbar-feedcast .navbar-header > a:hover,
     #navbar-feedcast ul.nav > li > a:hover {
-      background-color: #349fa9; }
+      background-color: #28435e; }
 
 #shortcut-navbar {
   background-color: #fff; }
@@ -59,7 +72,7 @@ input, textarea, button, nav {
     #shortcut-navbar li a {
       border-bottom: 2px solid white; }
       #shortcut-navbar li a:hover {
-        border-bottom: 2px solid #2C858D; }
+        border-bottom: 2px solid #2C3E50; }
 
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:focus,
@@ -67,7 +80,7 @@ input, textarea, button, nav {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
-  background-color: #349fa9; }
+  background-color: #28435e; }
 
 .channel {
   margin-bottom: 10px; }
@@ -153,7 +166,7 @@ input, textarea, button, nav {
 .search-form {
   position: relative; }
   .search-form:after {
-    color: #2C858D;
+    color: #2C3E50;
     content: "\f002";
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -177,10 +190,17 @@ input, textarea, button, nav {
   border-radius: 0px;
   background-color: #fff;
   color: #222;
-  border: 1px solid #e1e8ed; }
+  border: 0px; }
+  .panel .panel-heading {
+    color: #395067;
+    background-color: #fff; }
 
 .menu-top {
   text-align: center; }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .menu-top {
+    font-size: 13px; } }
 
 @media (max-width: 768px) {
   #shortcut-navbar ul.nav {
@@ -198,10 +218,11 @@ input, textarea, button, nav {
       width: calc(100vw - 200px); } }
 
 .channel-top {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding: 0px; }
 
 .channel-top__navbar-left {
-  float: left;
+  float: right;
   display: inline-block; }
   .channel-top__navbar-left .btn-group-vertical {
     width: 100%; }
@@ -211,32 +232,48 @@ input, textarea, button, nav {
   width: 300px;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: #2C3E50;
+  background-position: center;
   position: relative; }
-  .channel-top__image h1 {
+  .channel-top__image h3 {
     position: absolute;
-    bottom: 0px;
-    background-color: black;
-    color: white; }
+    bottom: -10px;
+    background-color: #395067;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 .channel-top__info {
-  float: right;
+  float: left;
   display: inline-block;
   width: calc(100% - 350px);
   margin-bottom: 0px; }
+  .channel-top__info .panel-heading {
+    color: #395067;
+    background-color: #fff; }
+    .channel-top__info .panel-heading i {
+      font-size: 1.3em; }
 
 .btn-group-vertical .btn, .btn-group-vertical .btn:focus {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background-color: #2C858D;
-  color: #fff;
-  margin: 10px 0px !important;
+  background-color: #fff;
+  color: #3498DB;
   border: 0px;
-  border-radius: 4px !important; }
+  border-bottom: 1px solid #efefef;
+  margin: 10px 0px !important;
+  border-radius: 0px !important; }
+
+.btn-group-vertical .btn:last-child {
+  border-bottom: none;
+  margin-bottom: 0px !important; }
 
 .btn-group-vertical .btn:hover {
-  opacity: .9; }
+  color: #2980B9; }
 
 .channel-podcast,
 .channel-podcast:link,
@@ -260,7 +297,7 @@ input, textarea, button, nav {
   .channel-podcast:link:before,
   .channel-podcast:visited:before,
   .channel-podcast:focus:before {
-    color: white;
+    color: #E74C3C;
     content: "\f144";
     font: normal normal normal 14px/1 FontAwesome;
     text-rendering: auto;
@@ -297,7 +334,18 @@ input, textarea, button, nav {
   bottom: -10px;
   right: 0px;
   padding: 4px;
-  background-color: red;
+  background-color: #E74C3C;
   color: #fff; }
+
+@media (max-width: 768px) {
+  .channel-top__navbar-left,
+  .channel-top__image,
+  .channel-top__info {
+    width: 100% !important; }
+  .channel-top__image {
+    height: 180px; } }
+
+.player-podcast {
+  width: 100%; }
 
 /*# sourceMappingURL=feedcast.css.map */

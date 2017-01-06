@@ -4,3 +4,9 @@ mixin podcast(duration, classes, url, image, name)
       .podcast-img(style='background-image: url(' + image + ')')
       h3= name
       h5.duration= duration
+
+mixin podcast-item(url, duration, name, description)
+  a(href=url).col-xs-12.channel-podcast
+    h4= name
+    p= description
+    h5.channel-podcast__duration= duration

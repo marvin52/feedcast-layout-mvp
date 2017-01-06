@@ -1,7 +1,9 @@
+
 .channel-top
   margin-bottom: 20px
+  padding: 0px
 .channel-top__navbar-left
-  float: left
+  float: right
   display: inline-block
   .btn-group-vertical
     width: 100%
@@ -10,33 +12,48 @@
   width: 300px
   background-size: auto 100%
   background-repeat: no-repeat
-  background-color: black
+  background-color: $color-bg-navbar
+  background-position: center
   position: relative
 
-  h1
+  h3
     position: absolute
-    bottom: 0px
-    background-color: black
-    color: white
+    bottom: -10px
+    background-color: $color-alternative  //$color-bg-navbar
+    color: $font-color-alternative //$color-font-navbar
+    width: 100%
+    padding: 10px
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
 
 .channel-top__info
-  float: right
+  float: left
   display: inline-block
   width: calc(100% - 350px)
   margin-bottom: 0px
+  .panel-heading
+    color: $color-alternative  //$color-bg-navbar
+    background-color: $font-color-alternative //$color-font-navbar
+    i
+      font-size: 1.3em
 
 .btn-group-vertical
   .btn, .btn:focus
     outline: none
     -webkit-box-shadow: none
     box-shadow: none
-    background-color: $color-bg-navbar
-    color: $color-font-navbar
-    margin: 10px 0px !important
+    background-color: #fff
+    color: #3498DB
     border: 0px
-    border-radius: 4px !important
+    border-bottom: 1px solid #efefef
+    margin: 10px 0px !important
+    border-radius: 0px !important
+  .btn:last-child
+    border-bottom: none
+    margin-bottom: 0px !important
   .btn:hover
-    opacity: .9
+    color: #2980B9
 
 
 
@@ -63,7 +80,7 @@ $lines-to-show: 2
     background-color: #ddd
 
   &:before
-    color: white
+    color: #E74C3C
     content: "\f144"
     font: normal normal normal 14px/1 FontAwesome
     text-rendering: auto
@@ -103,5 +120,14 @@ $lines-to-show: 2
   bottom: -10px
   right: 0px
   padding: 4px
-  background-color: red
+  background-color: #E74C3C
   color: #fff
+
+
+@media ( max-width: 768px )
+  .channel-top__navbar-left,
+  .channel-top__image,
+  .channel-top__info
+    width: 100% !important
+  .channel-top__image
+    height: 180px

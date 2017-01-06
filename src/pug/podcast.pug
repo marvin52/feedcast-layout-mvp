@@ -4,5 +4,11 @@ html
   include partials/header.pug
   body
     include partials/navbar-top
-    .container.panel
-      h5 Página do podcast (episódio)
+    .container
+      .row.panel.panel-default
+        .panel-heading
+          h3 NerdCast 548 - Rogue One: A Fan Service Story
+        .panel-body
+          p Comentamos sobre o filme Rogue One: Uma História Star Wars, passando pelos seus easter eggs até seus fan services.
+          audio(controls).player-podcast
+            source(src="https://nerdcast.jovemnerd.com.br/nerdcast_548_rogue_one.mp3" type="audio/mpeg")
